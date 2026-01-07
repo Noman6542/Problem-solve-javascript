@@ -94,3 +94,50 @@ for (let i = 0; i < words.length; i++) {
 let resul = words.join(' ');
 console.log(resul);
 // Output: "Hello World"
+
+// Problem 9: Find the Factorial of a Number
+// Write a function that calculates the factorial of a number using a loop.
+
+let number = 5;
+let factorial = 1;  
+for (let i = 1; i <= number; i++) {
+  factorial *= i;
+} 
+console.log(factorial);
+// Output: 120
+
+// Problem 10: PingPong Challenge
+// Write a function that prints numbers from 1 to 20. 
+
+for (let i = 1; i <= 20; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("PingPong");
+  } else if (i % 3 === 0) {
+    console.log("Ping");
+  } else if (i % 5 === 0) {
+    console.log("Pong");
+  } else {
+    console.log(i);
+  } 
+}
+// Output:
+// 1  
+// 2
+// Ping
+// 4
+// Pong
+// Ping
+// 7
+// 8          
+// Ping
+// Pong
+// 11
+// Ping 
+// 13
+// 14
+// PingPong
+// 16
+// 17
+// Ping
+// 19
+// Pong
